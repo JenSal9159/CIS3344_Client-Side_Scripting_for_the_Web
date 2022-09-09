@@ -1,0 +1,100 @@
+﻿body {
+    background-color: #FFE6E6;
+    font-family: 'Comic Sans MS';
+    color: #F38BA0;
+    /*By default, diff browsers have diff body margin and padding, so it's better to set them to 0*/
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: palevioletred;
+}
+
+/*no underline for links that are nested within footer and links with class = nav-link (navigation link)*/
+a.nav-link, footer a {
+    text-decoration: none; 
+}
+
+/*hr {
+    border-width: medium;
+}*/
+
+header, footer {
+    position: relative;
+    margin: 2% 2% 0%;
+}
+
+header {
+    background-image: url("../img/headerBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*navigation bar*/
+#navbar {
+    background-color: whitesmoke;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lucida Calligraphy';
+    border: double;
+    border-width: 10px;
+    border-color: #FF7878;
+    padding: 1%;
+}
+
+/*links inside the navigation bar*/
+.nav-link {
+    color: #FF7878;
+    padding: 2%;
+}
+
+/*all h1 elements will serve as the title of the webpage*/
+h1 {
+    font-family: 'Lucida Handwriting';
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    padding: 10%;
+}
+
+h2 {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p, li {
+    font-size: 20px;
+}
+
+p {
+    text-indent: 3%;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+.content {
+    position: relative;
+    border: ridge;
+    border-width: 10px;
+    background-color: #F7DAD9;
+    padding: 1% 2%;
+    margin: 4% 2% 0%;
+}
+
+footer {
+    text-align: center;
+    padding: 2% 2% 0%;
+}
+
+.logo {
+    width: 3%;
+    padding-left: 0.5%;
+    padding-right: 0.5%; 
+}
