@@ -1,0 +1,147 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-color: #80558C;
+    font-family: Britannic;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+a { text-decoration: none; }
+
+/* Note: - nav element is a block element
+         - fixed position alters width, meaning it won't take up the full width
+         - need to set the width property to 100% to take up the full screen */
+nav {
+    position: fixed;
+    background-color: #AF7AB3;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    top: 0px;
+    width: 100%;
+    padding: 6px;
+    z-index: 2;
+}
+
+nav > a {
+    padding: 6px;
+    color: whitesmoke;
+    font-family: Britannic;
+}
+
+nav > a:hover { background-color: #F675A8; }
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 40px;
+    color: #F675A8;
+    text-shadow: 2px 2px 2px white;
+    margin: 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-family:'Agency FB';
+}
+
+#home, .content, #gallery, #form {
+    position: relative;
+    padding: 4% 2%;
+}
+
+#home { padding-top: 10%; }
+
+#storyline, #equestriaGirl, #form { background-color: #A267AC; }
+
+/* Virtual Content Page */
+.content img {
+    width: 40%;
+    float: left;
+    margin-top: 2%;
+}
+
+#storyline img, #equestriaGirl img { margin-right: 2%; }
+
+#character img{
+    float: right;
+    margin-left: 2%;
+}
+
+/* Virtual Gallery Page */
+.container {
+    float: left;
+    width: 23%;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.container img { width: 100%; }
+
+.clear { clear: left; }
+
+#last-img { margin-bottom: 2%; }
+
+/* Virtual Form Page */
+table { margin: 2% 5% 0%; }
+
+.question { 
+    text-align: right; 
+    padding-right: 2%;
+}
+
+/* br elements that'll be hidden for large screen*/
+.default-hidden { display: none; }
+
+textarea { width: 95%; }
+
+form > input { /* submit button */
+    margin-bottom: 1.5%;
+    margin-left: 48%;
+}
+
+/* End of Virtual Pages */
+
+footer { 
+    position: relative;
+    text-align: center; 
+}
+
+/* Change the style for mobile (when screen is small) */
+@media screen and (max-width: 600px) {
+    nav > a {
+        display: block;
+    }
+
+    h1 { margin: 2%; }
+
+    /* stacking pictures on virtual content page and virtual gallery page*/
+    .content img, .container{
+        float: none;
+        width: 100%;
+    }
+
+    #storyline img, #character img, #equestriaGirl img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container{ margin: 0; }
+
+    /* stacking questions and user inputs on virtual form page */
+    table { 
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    td { display: block; }
+
+    .question { text-align: left; }
+
+    .default-hidden { display:inherit; } /* show the hidden br elements (to stack radio buttons) */
+
+    #home { padding-top: 260px;}
+}     
