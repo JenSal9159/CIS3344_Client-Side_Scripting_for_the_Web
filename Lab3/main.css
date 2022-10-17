@@ -1,0 +1,64 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-image: url("image/background.jpg");
+    color: saddlebrown;
+    font-size: 20px;
+}
+
+h1, h2, #search, a {
+    text-align: center;
+    color: #52200c;
+}
+
+a { display: block; font-weight: bold;}
+
+input, option { font-size: 15px; }
+
+img { 
+    width: 40%; 
+    border-radius: 10%;
+    box-shadow: 2px 2px 5px black;
+    float: left;
+    margin-right: 2%;
+}
+
+/* The followings are created by JavaScript. */
+/* div elements that are within div #petContainers, and each contains an image, texts about a pet, and an adopt btn */
+.pet {
+    background-color: antiquewhite;
+    margin: 2%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    box-sizing: border-box;
+    float: left;
+    width: 46%;
+}
+
+/* a div with texts about a pet and an adopt btn that's within div .pet */
+.textContainer { padding-top: 1%; }
+
+/*a div that's within div .pet and after div .textContainer*/
+.clear { clear: left; }
+
+/* Change the style for mobile (when screen is small) */
+@media screen and (max-width: 600px) {
+    .pet {
+        float: none;
+        width: 92%;
+        margin: 4%;
+        border-bottom-left-radius: 0%;
+        border-top-right-radius: 10%;
+    }
+
+    img { 
+        float: none; 
+        width: 100%;
+        margin: 0;
+    }
+
+    .textContainer { 
+        text-align: center; 
+        margin-bottom: 5%;
+    }
+}

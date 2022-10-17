@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+    <link href="main.css" rel="stylesheet" />
+    <script src="Pet.js"></script>
+</head>
+<body>
+    <h1 id="title">Pet Store</h1>
+
+    <div id="search">
+        <select id="ddlPets">
+            <option value="all">All</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="bird">Bird</option>
+        </select>
+        <input type="button" value="Search" id="btnSearch" />
+    </div>
+
+    <a href="#adoptedPets">Go to my adopted pet(s)</a>
+
+    <!-- A container for all pet images and texts, displayed by JavaScript -->
+    <div id="petContainers"></div>
+
+    <div class="clear"></div>
+
+    <div id="adoptedPets">
+        <h2>Your Adopted Pets</h2>
+        <a href="#title">Go back to the top</a>
+        <!-- image and texts of adopted pets are displayed here by JavaScript-->
+    </div>
+</body>
+</html>
