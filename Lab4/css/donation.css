@@ -1,0 +1,30 @@
+﻿/* This is a CSS for donation page only */
+#adRotator {
+    text-align: center;
+    font-weight: bold;
+}
+
+#adRotator img {
+    width: 30%;
+    box-shadow: 5px 5px 5px black;
+}
+
+#donationMessage {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#donationForm {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+#donationForm > label { padding-right: 1%; }
+
+#donorList { margin-left: 2%; }
+
+/* Change the style for mobile (when screen is small) */
+@media screen and (max-width: 600px) {
+    #adRotator img { width: 75%; }
+}

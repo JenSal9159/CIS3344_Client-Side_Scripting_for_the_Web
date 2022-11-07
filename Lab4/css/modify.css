@@ -1,0 +1,18 @@
+﻿img { width: 45%; }
+
+#pet {
+    box-sizing: border-box;
+    float: left;
+    width: 46%;
+}
+
+/* Change the style for mobile (when screen is small) */
+@media screen and (max-width: 600px) {
+    img { width: 100%; }
+
+    #pet {
+        float: none;
+        width: 92%;
+        margin: 4%;
+    }
+}

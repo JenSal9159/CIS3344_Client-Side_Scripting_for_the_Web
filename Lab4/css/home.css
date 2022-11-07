@@ -1,0 +1,50 @@
+﻿/* This is a CSS for home page only */
+#search, a { text-align: center; }
+
+img {
+    width: 25%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 5px black;
+    float: left;
+    margin-right: 2%;
+}
+
+/* The followings are created by JavaScript for Home Page. */
+/* div elements that are within div #petContainers, and each contains an image, info about a pet, and buttons */
+#pet {
+    background-color: antiquewhite;
+    margin: 2%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    /*box-sizing: border-box;
+    float: left;
+    width: 46%;*/
+}
+
+/* a div with info about a pet and buttons that's within div .pet */
+.textContainer { padding-top: 1%; }
+
+/*a div that's within div .pet and after div .textContainer*/
+.clear { clear: left; }
+
+/* Change the style for mobile (when screen is small) */
+@media screen and (max-width: 600px) {
+    img {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    #pet {
+        /*float: none;*/
+        width: 92%;
+        margin: 4%;
+        border-bottom-left-radius: 0%;
+        border-top-right-radius: 10%;
+    }
+
+    .textContainer {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+}

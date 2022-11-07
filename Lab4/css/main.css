@@ -1,0 +1,54 @@
+﻿/* This is a CSS that's applied to all pages (Home, Add Pet, and Donation pages) */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../image/background.jpg");
+    color: #52221f;
+    font-size: 20px;
+}
+
+h1, h2 { text-align: center; }
+
+a {
+    display: block;
+    font-weight: bold;
+    color: #52221f;
+}
+
+nav {
+    position: absolute;
+    background-color: #52221f;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    padding: 6px;
+}
+
+nav > a {
+    display: inline;
+    text-decoration: none;
+    padding: 6px;
+    color: mistyrose;
+}
+
+#title {
+    margin-top: 8%;
+    margin-bottom: 4%;
+}
+
+input, option { font-size: 15px; }
+
+/* Add Pets Page */
+#addPetsForm { padding-left: 36%; font-weight: bold; }
+
+/* Change the style for mobile (when screen is small) */
+@media screen and (max-width: 600px) {
+    nav > a { display: block; }
+
+    #title { margin-top: 55%; }
+
+    /* Add Pets Page */
+    #addPetsForm { padding-left: 2%; }
+}

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/donation.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="javascript/donation.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="http://cis-iis2.temple.edu/Fall2022/CIS3344_tun48961/">Main</a>
+        <a href="index.html">Home</a>
+        <a href="addPets.html">Add Pets</a>
+        <a href="modifyPet.html">Modify Pets</a>
+        <a href="donation.html">Donation</a>
+    </nav>
+
+    <h1 id="title">Donation</h1>
+
+    <div id="adRotator"></div> <!-- rotation of pets' img and name is here, created by js -->
+
+    <h2 id="donationMessage">Please help our animals. They need support and love.</h2>
+
+    <form id="donationForm">
+        <label>Name</label>
+        <input type="text" id="txtDonorName" placeholder="Enter your name here." /><br />
+        <label>How much money do you want to donate?</label>
+        <input type="number" id="txtFund" /><br /> <!-- HAS TO BE POS #-->
+        <input type="button" value="Donate" id="btnDonate" />
+    </form>   
+    
+    <div id="donorList"></div>
+</body>
+</html>

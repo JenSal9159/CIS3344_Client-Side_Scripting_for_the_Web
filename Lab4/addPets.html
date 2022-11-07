@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Pets</title>
+    <link href="css/main.css" rel="stylesheet" /> <!-- this general css includes styling for this webpage -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="javascript/addPets.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="http://cis-iis2.temple.edu/Fall2022/CIS3344_tun48961/">Main</a>
+        <a href="index.html">Home</a>
+        <a href="addPets.html">Add Pets</a>
+        <a href="modifyPet.html">Modify Pets</a>
+        <a href="donation.html">Donation</a>
+    </nav>
+
+    <h1 id="title">Add Pets</h1>
+    <h2>All following textboxes must be filled in to add a pet.</h2>
+
+    <form id="addPetsForm">
+        <table>
+            <tr>
+                <td>
+                    <select id="ddlPets">
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="bird">Bird</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Name</label></td>
+                <td>
+                    <input type="text" id="txtPetName" placeholder="Enter the pet's name here." />
+                </td>
+            </tr>
+            <tr>
+                <td><label>Birthdate</label></td>
+                <td><input type="date" id="calendar" /></td>
+            </tr>
+            <tr>
+                <td><label>Description</label></td>
+                <td><input type="text" id="txtDescription" /></td>
+            </tr>
+            <!-- When a new pet is created, its availability is set to "Needs a home" by default. -->
+            <tr>
+                <td><label>Pet's Image(Url)</label></td>
+                <td><input type="text" id="txtImageUrl" /></td>
+            </tr>
+        </table>                                         
+        <input type="button" id="btnAddPet" value="Add Pet" /> 
+    </form>
+</body>
+</html>
