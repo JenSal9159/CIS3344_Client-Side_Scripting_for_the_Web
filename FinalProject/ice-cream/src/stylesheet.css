@@ -1,0 +1,220 @@
+body {
+    background: linear-gradient(141deg, #FFC7E1 0%, #CFCAE8 51%, #D5B7E8 75%);
+    font-family: Garamond, serif;
+    letter-spacing: 1px;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+h1 {
+    text-shadow: 2px 2px 1px #D5B7E8;
+    display: inline-block;
+}
+
+h1, h2 {
+    color: yellow;
+    font-weight: bold;
+}
+
+.links a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50% 0;
+    box-shadow: 2px 4px 1px #D5B7E8;
+}
+
+    .links a:hover {
+        color: pink;
+        background-color: #381A14;
+    }
+
+a {
+    color: brown;
+    margin: 10%;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.main-content {
+    width: 80%;
+    margin: auto auto 100px auto;
+}
+
+.main {
+    margin-left: 10px;
+}
+
+.form {
+    width: 50%;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.order-options button:hover {
+    background-color: pink;
+}
+
+.order-options button:visited {
+    background-color: brown;
+}
+
+.order-options {
+    text-align: center;
+}
+
+    .order-options button {
+        border-style: none;
+        background-color: transparent;
+        font-size: 20px;
+    }
+
+button span {
+    display: flex;
+    padding: 10px;
+    border-bottom: ridge;
+    border-width: 4px;
+}
+
+.order-options li {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.order {
+    margin: 10px;
+    width: 288px;
+    overflow: hidden;
+}
+
+.order-title {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-decoration: underline;
+}
+
+.main-form {
+    color: #222222;
+    font-size: 18px;
+    width: 70%;
+    margin: auto;
+}
+
+.card-body {
+    background-color: #D5B7E8;
+    border-radius: 50% 50% 10% 10%;
+}
+
+.card {
+    border-radius: 50% 50% 10% 10%;
+    padding: 2%;
+    text-align: center;
+    text-type: center;
+}
+
+.btn-primary {
+    background-color: #FFC7E1;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0d6efd;
+    --bs-btn-border-color: #FFFCE3;
+    --bs-btn-hover-color: #A57E56;
+    --bs-btn-hover-bg: #FFFCE3;
+    --bs-btn-hover-border-color: #FFFCE3;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #FFFCE3;
+    --bs-btn-active-border-color: #FFFCE3;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #FFFCE3;
+    --bs-btn-disabled-border-color: #FFFCE3;
+}
+
+.btn-danger {
+    background-color: #FFC7E1;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0d6efd;
+    --bs-btn-border-color: #FFFCE3;
+    --bs-btn-hover-color: #A57E56;
+    --bs-btn-hover-bg: #FFFCE3;
+    --bs-btn-hover-border-color: #FFFCE3;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #FFFCE3;
+    --bs-btn-active-border-color: #FFFCE3;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #FFFCE3;
+    --bs-btn-disabled-border-color: #FFFCE3;
+}
+
+.input-control {
+    border: 1px solid #ccc;
+    color: #555555;
+    background-color: #fff;
+    height: 46px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 0;
+    display: block;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    margin-right: 5px;
+}
+
+.submit-btn {
+    margin-top: 1rem;
+}
+
+.whoopsie {
+    color: #f21e08;
+    background: #fff0f0;
+    padding: 10px;
+}
+
+/*make colors based on flavors!!*/ 
+option {
+    background-color: white;
+}
+
+.message {
+    color: #0e1b1e;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+@media screen and (max-width: 570px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    a {
+        font-size: .9rem;
+        margin: 2%;
+    }
+
+    .main-form {
+        width: 100%;
+    }
+}
