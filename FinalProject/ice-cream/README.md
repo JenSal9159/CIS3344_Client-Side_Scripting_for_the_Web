@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Before you start downloading the code files in here...
+- Note that a folder called "node_modules" is missing.
+- Install Node.js by going to their website 
+- Might need to do "npm install react-router-dom --save" and "npm install bootstrap"
+- If needed, google how to create a react-app (there are YouTube videos that go through the steps, which include terminal commands)
